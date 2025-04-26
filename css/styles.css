@@ -588,7 +588,6 @@ margin-bottom: 8px;
    position: absolute;
    border-radius: 4px;
    width: 408px;
-   height: 584px;
    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
    background: #fcfcfc;
    padding: 72px 24px 24px 24px;
@@ -615,28 +614,36 @@ margin-bottom: 8px;
    letter-spacing: 0.02em;
    text-align: center;
    color: #2e2f42;
+   margin-bottom: 16px;
   }
 
   .user-information-text {
-   font-family: "Roboto",sans-serif;
+   display: inline-block;
    font-weight: 400;
    font-size: 12px;
    line-height: 1.16667;
    letter-spacing: 0.04em;
    color: #8e8f99;
+   margin-bottom: 4px;
    
   }
+
+  .popup-input-wrapper{
+    margin-bottom: 26px;
+  }
+  
 
   .user-contacts-info {
    border: 1px solid rgba(46, 47, 66, 0.4);
    border-radius: 4px;
-   width: 360px;
+   width: 100%;
    height: 40px;
   }
 
   .comment-user {
    border: 1px solid rgba(46, 47, 66, 0.4);
    border-radius: 4px;
-   width: 360px;
+   width: 100%;
    height: 120px;
+   resize: none;
   }

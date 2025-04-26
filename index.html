@@ -504,13 +504,34 @@
 
     <div class="backdrop">
       <div class="modal">
-        <button class="popup-close">x</button>
+        <button class="popup-close">
+          <svg style="display: none">
+            <symbol id="icon-close" viewBox="0 0 32 32">
+              <path
+                d="m32 3-3-3-13 13L3 0 0 3l13 13L0 29l3 3 13-13 13 13 3-3-13-13L32 3z"
+              />
+            </symbol>
+          </svg>
+          <svg widht="24" height="24">
+            <use href="#icon-close"></use>
+          </svg>
+        </button>
         <h3 class="title-live-contacts">
           Leave your contacts and we will call you back
         </h3>
         <form>
           <label class="user-information-text" for="form-username">Name</label>
-          <div>
+          <div class="popup-input-wrapper">
+            <svg style="display: none">
+              <symbol id="icon-person" viewBox="0 0 32 32">
+                <path
+                  d="M16 16a5 5 0 1 0 0-11 5 5 0 0 0 0 11zm0 3c-4 0-11 1-11 5v1l2 2h18l2-2v-1c0-4-7-5-11-5z"
+                />
+              </symbol>
+            </svg>
+            <svg widht="24" height="24">
+              <use href="#icon-person"></use>
+            </svg>
             <input
               class="user-contacts-info"
               type="text"
@@ -521,7 +542,17 @@
         </form>
         <form>
           <label class="user-information-text" for="form-phone">Phone</label>
-          <div>
+          <div class="popup-input-wrapper">
+            <svg style="display: none">
+              <symbol id="icon-phone" viewBox="0 0 24 32">
+                <path
+                  d="M20 18h-3l-1 1-2 2-7-7 2-2 1-1V8L8 7H6L4 9c1 8 7 14 15 15l2-2v-2l-1-2z"
+                />
+              </symbol>
+            </svg>
+            <svg widht="24" height="24">
+              <use href="#icon-phone"></use>
+            </svg>
             <input
               class="user-contacts-info"
               type="tel"
@@ -532,7 +563,17 @@
         </form>
         <form>
           <label class="user-information-text" for="form-email">Email</label>
-          <div>
+          <div class="popup-input-wrapper">
+            <svg style="display: none">
+              <symbol id="icon-email" viewBox="0 0 24 32">
+                <path
+                  d="M20 8H4l-2 2v12l2 2h16l2-2V10l-2-2zm0 4-7 5h-2l-7-5 1-1 7 4 7-4a1 1 0 1 1 1 1z"
+                />
+              </symbol>
+            </svg>
+            <svg widht="24" height="24">
+              <use href="#icon-email"></use>
+            </svg>
             <input
               class="user-contacts-info"
               type="email"
@@ -553,7 +594,7 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
+          <div class="popup-input-wrapper">
             <input type="checkbox" name="form_privacy" id="form-comment" />
             <label class="user-information-text" for="form-comment"
               >I accept the terms and conditions of the
