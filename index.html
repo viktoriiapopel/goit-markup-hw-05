@@ -505,7 +505,7 @@
     <div class="backdrop">
       <div class="modal">
         <button class="popup-close">
-          <svg style="display: none">
+          <!-- <svg style="display: none">
             <symbol id="icon-close" viewBox="0 0 32 32">
               <path
                 d="m32 3-3-3-13 13L3 0 0 3l13 13L0 29l3 3 13-13 13 13 3-3-13-13L32 3z"
@@ -514,6 +514,9 @@
           </svg>
           <svg widht="24" height="24">
             <use href="#icon-close"></use>
+          </svg> -->
+          <svg width="24" height="24" class="">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <h3 class="title-live-contacts">
@@ -522,7 +525,10 @@
         <form>
           <label class="user-information-text" for="form-username">Name</label>
           <div class="popup-input-wrapper">
-            <svg style="display: none">
+            <svg class="popup-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            <!-- <svg style="display: none">
               <symbol id="icon-person" viewBox="0 0 32 32">
                 <path
                   d="M16 16a5 5 0 1 0 0-11 5 5 0 0 0 0 11zm0 3c-4 0-11 1-11 5v1l2 2h18l2-2v-1c0-4-7-5-11-5z"
@@ -531,7 +537,7 @@
             </svg>
             <svg widht="24" height="24">
               <use href="#icon-person"></use>
-            </svg>
+            </svg> -->
             <input
               class="user-contacts-info"
               type="text"
@@ -543,7 +549,10 @@
         <form>
           <label class="user-information-text" for="form-phone">Phone</label>
           <div class="popup-input-wrapper">
-            <svg style="display: none">
+            <svg class="popup-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <!-- <svg style="display: none">
               <symbol id="icon-phone" viewBox="0 0 24 32">
                 <path
                   d="M20 18h-3l-1 1-2 2-7-7 2-2 1-1V8L8 7H6L4 9c1 8 7 14 15 15l2-2v-2l-1-2z"
@@ -552,7 +561,7 @@
             </svg>
             <svg widht="24" height="24">
               <use href="#icon-phone"></use>
-            </svg>
+            </svg> -->
             <input
               class="user-contacts-info"
               type="tel"
@@ -564,7 +573,10 @@
         <form>
           <label class="user-information-text" for="form-email">Email</label>
           <div class="popup-input-wrapper">
-            <svg style="display: none">
+            <svg class="popup-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <!-- <svg style="display: none">
               <symbol id="icon-email" viewBox="0 0 24 32">
                 <path
                   d="M20 8H4l-2 2v12l2 2h16l2-2V10l-2-2zm0 4-7 5h-2l-7-5 1-1 7 4 7-4a1 1 0 1 1 1 1z"
@@ -573,7 +585,7 @@
             </svg>
             <svg widht="24" height="24">
               <use href="#icon-email"></use>
-            </svg>
+            </svg> -->
             <input
               class="user-contacts-info"
               type="email"
@@ -594,10 +606,29 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="popup-input-wrapper">
-            <input type="checkbox" name="form_privacy" id="form-comment" />
-            <label class="user-information-text" for="form-comment"
-              >I accept the terms and conditions of the
+          <div class="popup-input-wrapper footer-checkbox-wrapper">
+            <label class="user-information-text" for="form-privacy"
+              ><input
+                type="checkbox"
+                name="form_privacy"
+                id="form-privacy"
+                class="visually-hidden"
+              />
+              <span class="form-checkmark"
+                ><svg
+                  width="10"
+                  height="8"
+                  viewBox="0 0 10 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.44558 0.255056C8.61838 0.089653 8.84834 -0.00178848 9.08693 2.65108e-05C9.32551 0.0018415 9.55407 0.0967713 9.72436 0.264784C9.89466 0.432797 9.99337 0.660752 9.99968 0.900549C10.006 1.14034 9.91939 1.37323 9.75816 1.55005L4.86357 7.70436C4.7794 7.79551 4.67782 7.86865 4.5649 7.91942C4.45198 7.97018 4.33003 7.99754 4.20636 7.99984C4.08268 8.00214 3.95981 7.97935 3.8451 7.93282C3.73038 7.88629 3.62618 7.81698 3.53872 7.72903L0.292827 4.46564C0.202435 4.38096 0.129933 4.27884 0.0796475 4.16537C0.0293621 4.05191 0.00232279 3.92942 0.000143182 3.80522C-0.00203643 3.68102 0.0206883 3.55765 0.0669613 3.44248C0.113234 3.3273 0.182108 3.22267 0.269473 3.13483C0.356838 3.047 0.460905 2.97775 0.575465 2.93123C0.690026 2.88471 0.812734 2.86186 0.936267 2.86405C1.0598 2.86624 1.18163 2.89343 1.29449 2.94398C1.40734 2.99454 1.50892 3.06743 1.59315 3.15831L4.16189 5.73967L8.42227 0.28219C8.42994 0.272694 8.43813 0.263635 8.4468 0.255056H8.44558Z"
+                    fill="#F4F4FD"
+                  />
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a href="#" class="accent">Privacy Policy</a></label
             >
           </div>

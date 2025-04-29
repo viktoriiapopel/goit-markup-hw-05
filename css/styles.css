@@ -597,13 +597,23 @@ margin-bottom: 8px;
   position: absolute;
   right: 24px;
   top: 24px;
-  border-radius: 4px;
   width: 24px;
   height: 24px;
+  border-radius: 100%;
   outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #e7e9fc;
+ 
+  
+  }
+
+  .popup-close:hover {
+   background-color: #404bbf;
+  }
+  .popup-close:focus {
+   background-color: #404bbf;
   }
 
   .title-live-contacts {
@@ -628,16 +638,32 @@ margin-bottom: 8px;
    
   }
 
-  .popup-input-wrapper{
+  .popup-input-wrapper {
+   position: relative;
     margin-bottom: 26px;
   }
-  
+
+  .popup-input-wrapper svg {
+   fill: transparent;
+   stroke: black;
+   position: absolute;
+   left: 16px;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+
+  .popup-input-wrapper:has(input:hover) .popup-icon,
+   .popup-input-wrapper:has(input:focus) .popup-icon {
+   stroke: #4d5ae5;
+
+  }
 
   .user-contacts-info {
    border: 1px solid rgba(46, 47, 66, 0.4);
    border-radius: 4px;
    width: 100%;
    height: 40px;
+  outline: none;
   }
 
   .comment-user {
@@ -646,4 +672,37 @@ margin-bottom: 8px;
    width: 100%;
    height: 120px;
    resize: none;
+   outline: none;
+   margin-bottom: 16px;
   }
+
+  .footer-checkbox-wrapper {
+  
+  }
+
+
+
+
+.form-checkmark {
+   border-radius: 2px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   height: 16px;
+   width: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffff;
+  } 
+  
+   
+.footer-checkbox-wrapper input:checked+.form-checkmark {
+    background-color: #404bbf;
+   }
+
+.footer-checkbox-wrapper label {
+   margin-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+}
