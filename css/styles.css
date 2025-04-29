@@ -617,10 +617,7 @@ margin-bottom: 8px;
   
   }
 
-  .popup-close:hover {
-   background-color: #404bbf;
-   border: none;
-  }
+  .popup-close:hover, 
   .popup-close:focus {
    background-color: #404bbf;
    border: none;
@@ -630,14 +627,11 @@ margin-bottom: 8px;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .popup-close:hover .close-icon {
+  .popup-close:hover .close-icon,
+  .popup-close:focus .close-icon {
    fill: #ffffff;
   }
 
-   .popup-close:focus .close-icon {
-    fill: #ffffff;
-   }
- 
 
   .title-live-contacts {
    /* font-family: "Roboto", sans-serif; */
@@ -709,7 +703,11 @@ margin-bottom: 8px;
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .popup-icon:focus .user-contacts-info {
+  /* .popup-icon:focus .user-contacts-info {
+   fill: #4d5ae5;
+  } */
+
+  input.user-contacts-info:focus + .popup-icon {
    fill: #4d5ae5;
   }
 
@@ -735,12 +733,11 @@ margin-bottom: 8px;
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .comment-user:focus .visually-hidden {
+  .comment-user:focus {
    border-color: #4d5ae5;
   }
   .footer-checkbox-wrapper {
    margin-bottom: 24px;
-  
   }
 
 
@@ -758,13 +755,12 @@ margin-bottom: 8px;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
   
-  
-   
-.fotm-checkmark-svg input:checked+.form-checkmark {
-    background-color: #404bbf;
-    border: none;
-    fill: #f4f4fd;
-   }
+
+#user-privacy:checked + label .form-checkmark {
+   background-color: #404bbf;
+   border: none;
+   fill: #f4f4fd;
+}
 
 .footer-checkbox-wrapper label {
    margin-bottom: 0;
