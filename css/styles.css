@@ -542,6 +542,11 @@ margin-bottom: 8px;
       justify-content: center;
  }
 
+ .form-subscribe { 
+   display: flex;
+   gap: 24px;
+
+ }
  .footer-input-email {
    border: 1px solid #fff;
       border-radius: 4px;
@@ -549,6 +554,10 @@ margin-bottom: 8px;
       height: 40px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
       background-color: transparent;
+      font-size: 12px;
+      line-height: 2;
+      letter-spacing: 0.04em;
+      padding-left: 16px;
       outline: none;
       margin-right: 24px;
       color: #fff;
@@ -565,6 +574,11 @@ margin-bottom: 8px;
       width: 165px;
       height: 40px;
       background: #4d5ae5;
+   
+ }
+
+ .button-svg-footer{
+   margin-left: 16px;
  }
   /*MODAL*/
   .backdrop {
